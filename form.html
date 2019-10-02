@@ -1,0 +1,66 @@
+<!-- Registration Page -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap stuff -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Tab stuff -->
+    <title>New Post</title>
+    <link rel='icon' href='griff.jpg' type='image/x-icon'/>
+  </head>
+  <body>
+
+	<div class="container">
+		<form action="mypage_bootstrap.html">
+      <!-- Title -->
+      <label for="inputTitle" class="font-weight-bold">Article Title </label>
+      <input type="text" class="form-control" id="inputTitle" placeholder="Enter Title">
+      <!-- Author -->
+      <label for="inputAuthor" class="font-weight-bold">Author Name </label>
+      <input type="text" class="form-control" id="inputAuthor" placeholder="Enter Name">
+      <!-- Upload File -->
+      <div class="form-row">
+        <div class="col">
+          <label class = "font-weight-bold" for="File">Upload Files:</label>
+          <input type="file" class="form-control-file" id="File">
+        </div>
+        <div class="col">
+          <label for="Page" class="font-weight-bold">Pages</label>
+          <select class="form-control" id="Page">
+            <option>Academics</option>
+            <option>Fun</option>
+            <option>Random</option>
+          </select>
+        </div>
+      </div>
+      <!-- Article Text -->
+      <label class="font-weight-bold"for="Text">Article Text</label>
+      <textarea class="form-control" id="Text" rows="15"></textarea>
+      <!-- Tags -->
+      <div class="form-row">
+        <div class="col">
+          <label for="Tags" class="font-weight-bold">Select Tags</label>
+          <input type="checkbox" id="Tags" name = choice value = "Python">Python
+          <input type="checkbox" id="Tags" name = choice value = "C++">C++
+          <input type="checkbox" id="Tags" name = choice value = "C++">Java
+          <input type="checkbox" id="Tags" name = choice value = "C++">Scala
+          <input type="checkbox" id="Tags" name = choice value = "C++">Perl
+        </div>
+        <div class="col">
+          <label for="Tags" class="font-weight-bold">Visibility</label>
+          <input type="radio" id="Tags" name = choice value = "Public">Public
+          <input type="radio" id="Tags" name = choice value = "Privatec">Private
+        </div>
+    </div>
+
+			<input type="submit" value="Submit" class="btn btn-primary btn-block">
+		</form>
+	</div>
+</body>
+</html>
