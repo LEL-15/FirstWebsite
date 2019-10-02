@@ -15,7 +15,9 @@
     <link rel='icon' href='griff.jpg' type='image/x-icon'/>
   </head>
   <body>
-
+    <div class="d-flex justify-content-center">
+      <h1>Add New Article</h1>
+    </div>
 	<div class="container">
 		<form action="mypage_bootstrap.html">
       <!-- Title -->
@@ -46,21 +48,49 @@
       <div class="form-row">
         <div class="col">
           <label for="Tags" class="font-weight-bold">Select Tags</label>
-          <input type="checkbox" id="Tags" name = choice value = "Python">Python
-          <input type="checkbox" id="Tags" name = choice value = "C++">C++
-          <input type="checkbox" id="Tags" name = choice value = "C++">Java
-          <input type="checkbox" id="Tags" name = choice value = "C++">Scala
-          <input type="checkbox" id="Tags" name = choice value = "C++">Perl
         </div>
         <div class="col">
-          <label for="Tags" class="font-weight-bold">Visibility</label>
-          <input type="radio" id="Tags" name = choice value = "Public">Public
-          <input type="radio" id="Tags" name = choice value = "Privatec">Private
+          <label for="Visible" class="font-weight-bold">Visibility</label>
         </div>
-    </div>
-
-			<input type="submit" value="Submit" class="btn btn-primary btn-block">
-		</form>
-	</div>
+      </div>
+        <div class="form-row">
+          <div class="col">
+            <input type="checkbox" id="Python" name = Tags value = "Python">Python
+            <input type="checkbox" id="C++" name = Tags value = "C++">C++
+            <input type="checkbox" id="Java" name = Tags value = "C++">Java
+            <input type="checkbox" id="Scala" name = Tags value = "C++">Scala
+            <input type="checkbox" id="Perl" name = Tags value = "C++">Perl
+          </div>
+          <div class="col">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="Visible" id="Public" autocomplete="off" checked> Public
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="Visible" id="Private" autocomplete="off"> Private
+              </label>
+            </div>
+          </div>
+      </div>
+      <!--Login -->
+      <label for="Login" class="font-weight-bold">Login to Finish Submitting</label>
+      <div class="row">
+        <div class="col">
+          <input type="text" id = "Login" class="form-control" placeholder="Username">
+        </div>
+        <div class="col">
+          <input type="password" id = "Login" class="form-control" placeholder="Password">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input type="checkbox" id="Remember">
+          <label class="form-check-label" for="Remember"> Remember me</label>
+        </div>
+      </div>
+      <!--Submit -->
+      <input type="submit" value="Submit" class="btn btn-primary btn-block">
+    </form>
+  </div>
 </body>
 </html>
